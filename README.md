@@ -19,6 +19,7 @@ class Solution:
         return result
 ```
 </details>
+<details>
 <summary><strong>Problem 2 : Intersection of two arrays II (Easy)</strong></summary>
 Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must appear as many times as it shows in both arrays and you may return the result in any order.
 
@@ -50,4 +51,4 @@ class Solution:
                 pass
         return final
 ```
-..
+</details>
