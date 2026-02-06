@@ -1,6 +1,6 @@
 # leetcode_solved
 <details>
-<summary><strong>Problem 1: Intersection of Arrays 1: </strong></summary>
+<summary><strong>Problem 1: Intersection of Two Arrays 1: </strong></summary>
 Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
 Example 1:
 Input: nums1 = [1,2,2,1], nums2 = [2,2]   Output: [2]  
@@ -20,7 +20,7 @@ class Solution:
 ```
 </details>
 <details>
-<summary><strong>Problem 2 : Intersection of two arrays II (Easy)</strong></summary>
+<summary><strong>Problem 2 : Intersection of two arrays II </strong></summary>
 Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must appear as many times as it shows in both arrays and you may return the result in any order.
 
 Example 1:
