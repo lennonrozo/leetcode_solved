@@ -12,6 +12,7 @@ Constraints:
 
 Solution:
 ```python
+#Feb 5 2026
 class Solution:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
         setA, setB = set(nums1), set(nums2)
@@ -34,6 +35,7 @@ What if the given array is already sorted? How would you optimize your algorithm
 
 Solution:
 ```python
+#Feb 5 2026
 class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
         result1, result2 = {}, {}
@@ -60,6 +62,7 @@ Example3: Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]   Output: [8,9,9,9,0,0,0,1
  
 Constraints:  The number of nodes in each linked list is in the range [1, 100].  0 <= Node.val <= 9  It is guaranteed that the list represents a number that does not have leading zeros.
 ```python
+#Feb 6 2026
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
