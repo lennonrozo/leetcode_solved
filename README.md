@@ -59,4 +59,40 @@ Example2: Input: l1 = [0], l2 = [0]   Output: [0]
 Example3: Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]   Output: [8,9,9,9,0,0,0,1]
  
 Constraints:  The number of nodes in each linked list is in the range [1, 100].  0 <= Node.val <= 9  It is guaranteed that the list represents a number that does not have leading zeros.
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        temp1, temp2 = l1, l2
+        actual1, actual2 = 0, 0
+        n1 = n2 = 1
+        while temp1 != None:
+            actual1 = actual1 + (temp1.val * n1)
+            temp1 = temp1.next
+            n1 = n1 * 10
+        while temp2 != None:
+            actual2 = actual2 + (temp2.val * n2)
+            temp2 = temp2.next
+            n2 = n2 * 10
+        total = actual1 + actual2
+        if total == 0:
+            return ListNode()
+        digit = 0
+        head = None
+        temp = head
+        while total > 0:
+            digit = total % 10
+            if head == None:
+                head = ListNode(digit, None)
+                temp = head
+            else:
+                head.next = ListNode(digit, None)
+                head = head.next
+            total = total // 10
+        return temp
+```
 </details>
