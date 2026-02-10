@@ -111,7 +111,8 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 Constraints: 0 <= s.length <= 5 * 104   s consists of English letters, digits, symbols and spaces.
 
 ```python
-#Continue solution
+#Continue solution. Handle if list is only two items, find better way to handle reapeting characters and tracking those already visitied. I was thinking sliding
+#window. But I need to go over this again. Brain is cooked, look with fresh eyes in the morning
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         if len(s) == 0:
