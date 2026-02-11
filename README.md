@@ -161,6 +161,6 @@ class Solution:
         result.append(count)
         return max(result)
 
-#s = "abcabcbb"  Output 1  Expected  3... work more on tjis
+#s = "abcabcbb"  Output 1  Expected  3... work more on this, and see if I can improve as well
 ```
 </details>
