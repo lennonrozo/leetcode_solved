@@ -133,4 +133,32 @@ class Solution:
         result.append(count)
         return max(result)
 ```
+```python
+#attempted sliding window but it isn't working well for all cases. 
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        if len(s) == 0:
+            return 0
+        if len(s) == 1:
+            return 1
+        count = 1
+        start = 0
+        result = []
+        state = set()
+        for i in range(start, len(s) - 1):
+                if s[i] == s[i + 1]:
+                    start = i + 1
+                    result.append(count)
+                    count = 0
+                    state.clear()
+                else:
+                    if s[i] not in state:
+                        state.update(s[i])
+                        count += 1
+                    else:
+                        count = 1
+                        # start = i + 1
+        result.append(count)
+        return max(result)
+```
 </details>
