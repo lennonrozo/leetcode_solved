@@ -134,7 +134,7 @@ class Solution:
         return max(result)
 ```
 ```python
-#attempted sliding window but it isn't working well for all cases. 
+#attempted sliding window but it isn't working well for all cases. I will complete this tommorrow and see if there is any better approach
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         if len(s) == 0:
