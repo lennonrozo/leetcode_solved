@@ -172,6 +172,7 @@ Example 2:  Input: s = "cbbd"    Output: "bb"
 Constraints:  1 <= s.length <= 1000   s consist of only digits and English letters. 
 
 ```python
+#Continue working on these, find some string methods and algorithms to get at these
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         start = 0
