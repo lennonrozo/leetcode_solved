@@ -164,3 +164,29 @@ class Solution:
 #s = "abcabcbb"  Output 1  Expected  3... work more on this, and see if I can improve as well
 ```
 </details>
+<details>
+<summary><strong>Problem 5: Longest Palindrome in string: </strong></summary>
+```python
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        start = 0
+        return self.helper(s, start)
+    def helper(self, s, start):
+        n = len(s)
+        pali = False
+        result = ""
+        for i in range(n+1):
+            sub = s[start:i+1]
+            if sub == sub[::-1]:
+                pali = True
+                print(sub)
+                if len(sub) > len(result):
+                    result = sub
+                else:
+                    continue
+            else:
+                start += 1
+                self.helper(s[i+1:], start)
+        return result
+```
+</details>
