@@ -136,8 +136,6 @@ class Solution:
 ```
 ```python
 #attempted sliding window but it isn't working well for all cases. I will complete this tommorrow and see if there is any better approach
-# Had a recursive approach, still need to figure how to store results and handle edge cases
-# Heard of Manacher Algorithm, working to implement that.
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
@@ -177,6 +175,9 @@ Constraints:  1 <= s.length <= 1000   s consist of only digits and English lette
 
 ```python
 #Continue working on these, find some string methods and algorithms to get at these. Also, make it efficient if possible
+# Had a recursive approach, still need to figure how to store results and handle edge cases
+# Heard of Manacher Algorithm, working to implement that.
+
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         start = 0
