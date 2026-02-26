@@ -215,7 +215,8 @@ Example 3:  Input: s = "1"  Output: 0
 Constraints:  1 <= s.length <= 500   s consists of characters '0' or '1'  s[0] == '1'
 
 Solution:
-``` java
+``` python
+# Used python in-built function to get binary to decimal then followed algorithm while counting steps. Finally returned number of steps.
 class Solution:
     def numSteps(self, s: str) -> int:
         num = int(s, 2) 
