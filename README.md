@@ -113,8 +113,6 @@ Constraints: 0 <= s.length <= 5 * 104   s consists of English letters, digits, s
 ```python
 #Continue solution. Handle if list is only two items, find better way to handle reapeting characters and tracking those already visitied. I was thinking sliding
 #window. But I need to go over this again. Brain is cooked, look with fresh eyes in the morning
-# Had a recursive approach, still need to figure how to store results and handle edge cases
-# Heard of Manacher Algorithm, working to implement that.
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
@@ -138,6 +136,9 @@ class Solution:
 ```
 ```python
 #attempted sliding window but it isn't working well for all cases. I will complete this tommorrow and see if there is any better approach
+# Had a recursive approach, still need to figure how to store results and handle edge cases
+# Heard of Manacher Algorithm, working to implement that.
+
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         if len(s) == 0:
