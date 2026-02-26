@@ -196,3 +196,6 @@ class Solution:
         return result
 ```
 </details>
+<details>
+<summary><strong>Problem 6: Num steps to reduce binary num to 1: </strong></summary>
+
